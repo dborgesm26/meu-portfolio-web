@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>EletroPro — Serviços Elétricos Residenciais e Comerciais</title>
+<meta name="description" content="Serviços elétricos rápidos, seguros e com garantia. Atendimento 24h para emergências. Peça seu orçamento via WhatsApp!">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--primary:#0284c7;--primary-hover:#0369a1;--secondary:#0f172a;--accent:#f59e0b;--bg-light:#f8fafc;--text-main:#334155;--text-muted:#64748b;--white:#fff;--border:#e2e8f0;--whatsapp:#22c55e;--whatsapp-hover:#16a34a;--radius:12px;--shadow:0 10px 15px -3px rgba(0,0,0,.05),0 4px 6px -4px rgba(0,0,0,.05);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg-light:#0b1220;--white:#111a2e;--border:#1f2a44;--text-main:#cbd5e1;--text-muted:#94a3b8;--secondary:#e2e8f0}}
+:root[data-theme="dark"]{--bg-light:#0b1220;--white:#111a2e;--border:#1f2a44;--text-main:#cbd5e1;--text-muted:#94a3b8;--secondary:#e2e8f0}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',system-ui,sans-serif}
+body{background:var(--bg-light);color:var(--text-main);line-height:1.6;padding-bottom:70px}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+header{background:var(--white);border-bottom:1px solid var(--border);position:sticky;top:env(safe-area-inset-top,0px);z-index:100}
+.header-content{display:flex;justify-content:space-between;align-items:center;height:70px}
+.logo{font-size:1.4rem;font-weight:800;color:var(--secondary);text-decoration:none}
+.logo span{color:var(--primary)}
+.header-btn{background:var(--primary);color:#fff;padding:10px 20px;border-radius:var(--radius);text-decoration:none;font-weight:600;font-size:.9rem;transition:background .2s}
+.header-btn:hover{background:var(--primary-hover)}
+.hero{padding:60px 0;background:linear-gradient(135deg,#0f172a,#1e293b);color:#fff}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.badge{display:inline-flex;gap:6px;background:rgba(245,158,11,.15);color:var(--accent);padding:6px 14px;border-radius:50px;font-size:.85rem;font-weight:600;margin-bottom:20px;border:1px solid rgba(245,158,11,.3)}
+.hero-title{font-size:2.5rem;font-weight:800;line-height:1.2;margin-bottom:16px}
+.hero-title span{color:#38bdf8}
+.hero-description{font-size:1.1rem;color:#94a3b8;margin-bottom:30px}
+.cta-btn-main{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--whatsapp);color:#fff;padding:16px 32px;border-radius:var(--radius);font-weight:700;font-size:1.1rem;text-decoration:none;box-shadow:0 4px 14px rgba(34,197,94,.4);transition:transform .2s,background .2s;width:100%;max-width:400px}
+.cta-btn-main:hover{background:var(--whatsapp-hover);transform:translateY(-2px)}
+.hero-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);padding:30px;border-radius:var(--radius)}
+.hero-card-item{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+.hero-card-item:last-child{margin-bottom:0}
+.hero-card-item p{font-size:.85rem;color:#94a3b8}
+.icon-box{flex:none;width:48px;height:48px;background:rgba(2,132,199,.2);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.4rem}
+section{padding:70px 0}
+.section-header{text-align:center;max-width:600px;margin:0 auto 50px}
+.section-header h2{font-size:2rem;color:var(--secondary);font-weight:700;margin-bottom:10px}
+.section-header p{color:var(--text-muted)}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.service-card,.review-card{background:var(--white);padding:30px;border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow);transition:transform .2s}
+.service-card:hover{transform:translateY(-5px)}
+.service-icon{font-size:2rem;margin-bottom:16px;display:inline-block}
+.service-card h3{font-size:1.2rem;color:var(--secondary);margin-bottom:10px}
+.service-card p{color:var(--text-muted);font-size:.95rem}
+.features-bg,.faq-bg{background:var(--white);border-top:1px solid var(--border)}
+.features-bg{border-bottom:1px solid var(--border)}
+.features-grid,.reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}
+.feature-item{display:flex;gap:16px}
+.feature-item h4{color:var(--secondary);margin-bottom:6px;font-size:1.1rem}
+.feature-item p{color:var(--text-muted);font-size:.9rem}
+.review-card{padding:24px}
+.stars{color:var(--accent);margin-bottom:12px;font-size:.9rem}
+.review-text{font-size:.95rem;margin-bottom:16px;font-style:italic}
+.author{font-weight:600;color:var(--secondary);font-size:.9rem}
+.author-info{font-size:.8rem;color:var(--text-muted)}
+.faq-list{max-width:700px;margin:0 auto;display:flex;flex-direction:column;gap:16px}
+.faq-item{border:1px solid var(--border);border-radius:var(--radius);padding:20px;background:var(--bg-light)}
+.faq-item h4{color:var(--secondary);margin-bottom:8px}
+.faq-item p{color:var(--text-muted);font-size:.95rem}
+.cta-final{background:linear-gradient(135deg,#0284c7,#0369a1);color:#fff;text-align:center;border-radius:20px;padding:50px 20px;margin:40px auto}
+.cta-final h2{font-size:2rem;margin-bottom:12px}
+.cta-final p{margin-bottom:30px;opacity:.9}
+footer{background:#0f172a;color:#94a3b8;padding:40px 0 20px;font-size:.9rem;text-align:center}
+.float-whatsapp{position:fixed;bottom:calc(20px + env(safe-area-inset-bottom,0px));right:20px;background:var(--whatsapp);color:#fff;border-radius:50px;padding:12px 24px;font-weight:700;text-decoration:none;display:flex;align-items:center;gap:10px;box-shadow:0 4px 20px rgba(0,0,0,.3);z-index:1000;transition:transform .2s}
+.float-whatsapp:hover{transform:scale(1.05)}
+@media(max-width:768px){.hero-grid{grid-template-columns:1fr}.hero-title{font-size:1.9rem}.section-header h2,.cta-final h2{font-size:1.6rem}}
+</style>
+</head>
+<body>
+<header>
+<div class="container header-content">
+<a href="#" class="logo">⚡ Eletro<span>Pro</span></a>
+<a href="https://wa.me/5500000000000?text=Ol%C3%A1,%20preciso%20de%20um%20or%C3%A7amento%20el%C3%A9trico!" class="header-btn" target="_blank">Orçamento Rápido</a>
+</div>
+</header>
+
+<section class="hero">
+<div class="container hero-grid">
+<div>
+<div class="badge">🔴 Atendimento 24 Horas &amp; Emergências</div>
+<h1 class="hero-title">Serviços Elétricos Profissionais e Rápidos para <span>Sua Casa ou Empresa</span></h1>
+<p class="hero-description">Instalações, manutenções preventivas e reparos de urgência com garantia total de segurança. Atendimento em toda a cidade.</p>
+<a href="https://wa.me/5500000000000?text=Ol%C3%A1,%20preciso%20de%20um%20or%C3%A7amento%20el%C3%A9trico!" class="cta-btn-main" target="_blank">📱 Pedir Orçamento no WhatsApp</a>
+</div>
+<div class="hero-card">
+<div class="hero-card-item"><div class="icon-box">🛡️</div><div><strong>Garantia nos Serviços</strong><p>Todos os reparos com nota e garantia técnica.</p></div></div>
+<div class="hero-card-item"><div class="icon-box">⏱️</div><div><strong>Chegada Rápida</strong><p>Técnicos de prontidão para chamados urgentes.</p></div></div>
+<div class="hero-card-item"><div class="icon-box">🏷️</div><div><strong>Preço Justo e Sem Surpresas</strong><p>Orçamento detalhado aprovado antes da execução.</p></div></div>
+</div>
+</div>
+</section>
+
+<section id="servicos">
+<div class="container">
+<div class="section-header"><h2>O que fazemos por você</h2><p>Soluções completas para resolver qualquer problema elétrico com segurança.</p></div>
+<div class="services-grid">
+<div class="service-card"><div class="service-icon">💡</div><h3>Instalações em Geral</h3><p>Instalação de luminárias, tomadas, chuveiros elétricos, ventiladores de teto e fita LED.</p></div>
+<div class="service-card"><div class="service-icon">🔌</div><h3>Quadros de Distribuição</h3><p>Troca e montagem de disjuntores, substituição do quadro antigo e balanceamento de cargas.</p></div>
+<div class="service-card"><div class="service-icon">🚨</div><h3>Manutenção de Emergência</h3><p>Diagnóstico rápido para curtos-circuitos, quedas frequentes de energia e cheiro de queimado.</p></div>
+<div class="service-card"><div class="service-icon">🏢</div><h3>Projetos Comerciais</h3><p>Adequação da rede elétrica para lojas, escritórios, galpões e pequenos comércios.</p></div>
+</div>
+</div>
+</section>
+
+<section class="features-bg">
+<div class="container">
+<div class="section-header"><h2>Por que confiar na EletroPro?</h2><p>Compromisso com o cumprimento de prazos e normas técnicas de segurança.</p></div>
+<div class="features-grid">
+<div class="feature-item"><div class="icon-box">👨‍🔧</div><div><h4>Eletricistas Certificados</h4><p>Profissionais qualificados com treinamento atualizado nas normas NBR 5410.</p></div></div>
+<div class="feature-item"><div class="icon-box">📑</div><div><h4>Orçamento Sem Compromisso</h4><p>Avaliamos o problema e fornecemos uma cotação transparente sem taxas escondidas.</p></div></div>
+<div class="feature-item"><div class="icon-box">🧼</div><div><h4>Serviço Limpo e Organizado</h4><p>Respeitamos sua casa ou estabelecimento, mantendo o ambiente limpo após o trabalho.</p></div></div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="section-header"><h2>O que dizem nossos clientes</h2><p>Avaliações de quem já contratou nossos serviços.</p></div>
+<div class="reviews-grid">
+<div class="review-card"><div class="stars">★★★★★</div><p class="review-text">"Resolveram um curto-circuito no meu apartamento no domingo à noite. Chegaram rápido e foram super atenciosos. Recomendo de olhos fechados!"</p><div class="author">Ricardo Menezes</div><div class="author-info">Residencial Centro</div></div>
+<div class="review-card"><div class="stars">★★★★★</div><p class="review-text">"Fizeram toda a troca da fiação e do quadro de disjuntores da minha loja. Serviço impecável, rápido e limpo."</p><div class="author">Camila Oliveira</div><div class="author-info">Proprietária de Comércio</div></div>
+<div class="review-card"><div class="stars">★★★★★</div><p class="review-text">"Preço justo e explicação bem clara do que precisava ser feito. Não tentaram empurrar serviços desnecessários."</p><div class="author">Marcos Souza</div><div class="author-info">Residencial Jardim Europa</div></div>
+</div>
+</div>
+</section>
+
+<section class="faq-bg">
+<div class="container">
+<div class="section-header"><h2>Dúvidas Frequentes</h2><p>Tire suas dúvidas antes de solicitar a visita.</p></div>
+<div class="faq-list">
+<div class="faq-item"><h4>Como funciona a cobrança do orçamento?</h4><p>O orçamento prévio via WhatsApp é 100% gratuito. Para diagnósticos presenciais complexos, informamos os valores com antecedência.</p></div>
+<div class="faq-item"><h4>Vocês cobrem atendimento em quais regiões?</h4><p>Atendemos todos os bairros da cidade e regiões metropolitanas próximas.</p></div>
+<div class="faq-item"><h4>Quais formas de pagamento são aceitas?</h4><p>Aceitamos Pix, cartões de crédito/débito e dinheiro ao final da execução do serviço.</p></div>
+</div>
+</div>
+</section>
+
+<div class="container">
+<div class="cta-final">
+<h2>Precisa de um eletricista agora mesmo?</h2>
+<p>Fale diretamente com nossa equipe no WhatsApp e resolva seu problema com rapidez.</p>
+<a href="https://wa.me/5500000000000?text=Ol%C3%A1,%20preciso%20de%20um%20or%C3%A7amento%20el%C3%A9trico!" class="cta-btn-main" target="_blank">💬 Falar no WhatsApp Agora</a>
+</div>
+</div>
+
+<footer>
+<div class="container">
+<p>© 2026 EletroPro - Serviços Elétricos. Todos os direitos reservados.</p>
+<p style="font-size:.8rem;margin-top:5px">Atendimento 24h para chamados emergenciais.</p>
+</div>
+</footer>
+
+<a href="https://wa.me/5500000000000?text=Ol%C3%A1,%20preciso%20de%20um%20or%C3%A7amento%20el%C3%A9trico!" class="float-whatsapp" target="_blank">💬 WhatsApp</a>
+</body>
+</html>
