@@ -3,192 +3,313 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Tênis UltraComfort Sport — Performance e Estilo</title>
-<meta name="description" content="O tênis ideal para corridas e uso diário. Frete Grátis e Garantia de 7 dias. Peça agora!">
+<title>Burguer Master | Hambúrguer artesanal</title>
+<meta name="description" content="O melhor hambúrguer artesanal da cidade. Peça pelo WhatsApp.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
 <style>
-:root{--primary:#2563eb;--dark:#0f172a;--light-bg:#f8fafc;--text-main:#1e293b;--text-muted:#64748b;--green:#16a34a;--wa:#22c55e;--wa-hover:#16a34a;--border:#e2e8f0;--radius:12px;--shadow:0 10px 25px -5px rgba(0,0,0,.08);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px)}
-html{scroll-padding-top:env(safe-area-inset-top,0px)}
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',system-ui,-apple-system,'Segoe UI',Arial,sans-serif}
-body{background:#fff;color:var(--text-main);line-height:1.5;padding-bottom:calc(70px + env(safe-area-inset-bottom,0px))}
-.container{max-width:1100px;margin:0 auto;padding:0 20px}
-.top-bar{background:var(--dark);color:#fff;text-align:center;padding:10px 15px;font-size:.85rem;font-weight:600;letter-spacing:.5px}
-.top-bar span{color:#facc15}
-header{border-bottom:1px solid var(--border);padding:15px 0;position:sticky;top:env(safe-area-inset-top,0px);background:rgba(255,255,255,.95);backdrop-filter:blur(8px);z-index:100}
-.nav-container{display:flex;justify-content:space-between;align-items:center;gap:10px}
-.brand-logo{font-size:1.3rem;font-weight:800;color:var(--dark);text-decoration:none;letter-spacing:-.5px}
-.brand-logo span{color:var(--primary)}
-.product-section{padding:40px 0}
-.product-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
-.product-gallery{background:var(--light-bg);border-radius:var(--radius);padding:40px;text-align:center;border:1px solid var(--border)}
-.product-image-box{width:100%;height:350px;background:linear-gradient(135deg,#e2e8f0,#cbd5e1);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;color:var(--text-muted);font-size:1.2rem;font-weight:600;box-shadow:var(--shadow);margin-bottom:20px}
-.gallery-thumbs{display:flex;gap:12px;justify-content:center}
-.thumb{width:60px;height:60px;background:#cbd5e1;border-radius:8px;cursor:pointer;border:2px solid transparent}
-.thumb.active{border-color:var(--primary)}
-.product-details{display:flex;flex-direction:column;gap:16px}
-.rating-box{display:flex;align-items:center;gap:8px;font-size:.9rem;color:var(--text-muted)}
-.stars{color:#f59e0b}
-.product-title{font-size:2.2rem;font-weight:800;color:var(--dark);line-height:1.2}
-.price-box{display:flex;align-items:baseline;gap:12px;margin:8px 0;flex-wrap:wrap}
-.old-price{font-size:1.1rem;color:var(--text-muted);text-decoration:line-through}
-.current-price{font-size:2.2rem;font-weight:800;color:var(--green)}
-.badge-discount{background:#dcfce7;color:#15803d;padding:4px 10px;border-radius:50px;font-size:.8rem;font-weight:700}
-.option-group{display:flex;flex-direction:column;gap:8px}
-.option-label{font-size:.9rem;font-weight:600;color:var(--dark)}
-.size-selector{display:flex;gap:10px;flex-wrap:wrap}
-.size-btn{border:1px solid var(--border);background:#fff;color:var(--text-main);padding:10px 16px;border-radius:8px;font-weight:600;cursor:pointer;transition:all .2s}
-.size-btn:hover,.size-btn.active{border-color:var(--primary);color:var(--primary);background:#eff6ff}
-.cta-buy-btn{background:var(--wa);color:#fff;border:none;padding:18px 24px;border-radius:var(--radius);font-size:1.1rem;font-weight:800;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;box-shadow:0 4px 15px rgba(34,197,94,.4);transition:transform .2s,background-color .2s;margin-top:10px}
-.cta-buy-btn:hover{background:var(--wa-hover);transform:translateY(-2px)}
-.guarantees-list{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding-top:15px;border-top:1px solid var(--border);margin-top:10px;text-align:center}
-.guarantee-item{font-size:.75rem;color:var(--text-muted);font-weight:500}
-.guarantee-item span{font-size:1.2rem;display:block;margin-bottom:4px}
-.benefits-section{background:var(--light-bg);padding:60px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-.section-title{text-align:center;font-size:1.8rem;font-weight:800;color:var(--dark);margin-bottom:40px}
-.benefits-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:30px}
-.benefit-card{background:#fff;padding:30px;border-radius:var(--radius);border:1px solid var(--border);text-align:center}
-.benefit-icon{font-size:2.5rem;margin-bottom:16px}
-.benefit-card h3{font-size:1.2rem;color:var(--dark);margin-bottom:10px}
-.benefit-card p{color:var(--text-muted);font-size:.95rem}
-.specs-section{padding:60px 0}
-.specs-table{width:100%;max-width:700px;margin:0 auto;border-collapse:collapse;background:#fff;border:1px solid var(--border)}
-.specs-table tr{border-bottom:1px solid var(--border)}
-.specs-table tr:last-child{border-bottom:none}
-.specs-table td{padding:16px 20px;font-size:.95rem}
-.specs-table td:first-child{font-weight:600;color:var(--dark);width:40%;background:var(--light-bg)}
-.reviews-section{background:var(--light-bg);padding:60px 0;border-top:1px solid var(--border)}
-.reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:20px}
-.review-card{background:#fff;padding:20px;border-radius:var(--radius);border:1px solid var(--border)}
-.review-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
-.reviewer-name{font-weight:700;color:var(--dark);font-size:.95rem}
-.review-comment{font-size:.9rem;color:var(--text-main)}
-footer{background:var(--dark);color:#94a3b8;padding:30px 0;text-align:center;font-size:.85rem}
-.mobile-buy-bar{position:fixed;bottom:0;left:0;width:100%;background:#fff;padding:12px 20px calc(12px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--border);display:none;box-shadow:0 -4px 15px rgba(0,0,0,.05);z-index:1000}
-@media(max-width:768px){.product-grid{grid-template-columns:1fr}.product-title{font-size:1.8rem}.mobile-buy-bar{display:block}.product-gallery{padding:24px}}
+/* ===== 1. TOKENS ===== */
+:root{
+  --bg:#14100e;        /* carvão */
+  --surface:#211a17;   /* cards */
+  --line:#3a2e29;
+  --text:#f6ede4;
+  --muted:#b9a99d;
+  --red:#e1251b;       /* ketchup */
+  --red-dark:#b81a12;
+  --yellow:#ffc21a;    /* cheddar */
+  --wa:#25d366;
+  --display:"Anton","Impact",sans-serif;
+  --body:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --radius:16px;
+}
+
+/* ===== 2. BASE (mobile-first) ===== */
+*,*::before,*::after{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--bg);color:var(--text);font:400 1rem/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+.container{width:min(1100px,100% - 2.5rem);margin-inline:auto}
+section{padding:4rem 0}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.05;letter-spacing:.01em}
+h2{font-size:clamp(2rem,6vw,3rem);margin-bottom:.5rem}
+.section-sub{color:var(--muted);max-width:46ch;margin-bottom:2.5rem}
+
+/* ===== 3. BOTÕES ===== */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  padding:.9rem 1.5rem;border-radius:999px;font-weight:700;border:0;cursor:pointer;
+  transition:transform .15s,background .15s}
+.btn:active{transform:scale(.97)}
+.btn-primary{background:var(--red);color:#fff;font-size:1.05rem;box-shadow:0 8px 24px rgba(225,37,27,.35)}
+.btn-primary:hover{background:var(--red-dark)}
+.btn-small{background:var(--yellow);color:#201400;padding:.65rem 1.1rem;font-size:.9rem}
+.btn-small:hover{background:#ffd24d}
+
+/* ===== 4. HEADER ===== */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(20,16,14,.92);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--line);
+  padding-top:env(safe-area-inset-top,0px)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-family:var(--display);font-size:1.6rem;color:var(--yellow);letter-spacing:.02em}
+.logo span{color:var(--red)}
+.nav{display:flex;gap:1.1rem;font-size:.9rem;font-weight:500;color:var(--muted)}
+.nav a:hover{color:var(--yellow)}
+.nav .hide-mobile{display:none}
+
+/* ===== 5. HERO ===== */
+.hero{padding:2.5rem 0 3.5rem;
+  background:radial-gradient(circle at 80% 30%,rgba(225,37,27,.28),transparent 55%)}
+.hero-grid{display:grid;gap:2rem;align-items:center}
+.hero h1{font-size:clamp(2.8rem,12vw,5.5rem);text-transform:uppercase}
+.hero h1 em{font-style:normal;color:var(--yellow)}
+.hero p{color:var(--muted);font-size:1.1rem;margin:1rem 0 1.75rem;max-width:44ch}
+.hero p strong{color:var(--text)}
+.hero-art{max-width:420px;margin-inline:auto;filter:drop-shadow(0 20px 40px rgba(0,0,0,.6))}
+/* Única animação da página: o hambúrguer "flutua" */
+@media (prefers-reduced-motion:no-preference){
+  .hero-art{animation:float 4s ease-in-out infinite}
+  @keyframes float{50%{transform:translateY(-10px)}}
+}
+
+/* ===== 6. CARDÁPIO ===== */
+.menu-grid{display:grid;gap:1.25rem;grid-template-columns:1fr}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;display:flex;flex-direction:column}
+.card-img{background:radial-gradient(circle,#3a2418,#1a1310);padding:1.5rem 2rem}
+.card-img svg{width:100%;max-width:200px;margin-inline:auto}
+.card-body{padding:1.25rem;display:flex;flex-direction:column;gap:.5rem;flex:1}
+.card h3{font-size:1.6rem}
+.card .ingredients{color:var(--muted);font-size:.92rem;flex:1}
+.card-foot{display:flex;align-items:center;justify-content:space-between;margin-top:.75rem}
+.price{font-family:var(--display);font-size:1.7rem;color:var(--yellow)}
+
+/* ===== 7. DIFERENCIAIS ===== */
+.features{background:var(--surface);border-block:1px solid var(--line)}
+.feat-grid{display:grid;gap:1.5rem}
+.feat{display:flex;gap:1rem;align-items:flex-start}
+.feat-icon{flex:none;width:52px;height:52px;border-radius:14px;background:var(--red);
+  display:grid;place-items:center;font-size:1.6rem}
+.feat h3{font-size:1.35rem;margin-bottom:.2rem}
+.feat p{color:var(--muted);font-size:.95rem}
+
+/* ===== 8. DEPOIMENTOS ===== */
+.reviews{display:grid;gap:1.25rem}
+.review{border-left:4px solid var(--yellow);padding:.25rem 0 .25rem 1.1rem}
+.stars{color:var(--yellow);letter-spacing:.15em;font-size:1.05rem}
+.review blockquote{margin:.4rem 0;font-size:1.05rem}
+.review cite{color:var(--muted);font-size:.9rem;font-style:normal}
+
+/* ===== 9. RODAPÉ ===== */
+.site-footer{background:#0e0b09;border-top:1px solid var(--line);padding:3rem 0 6rem}
+.footer-grid{display:grid;gap:2rem}
+.site-footer h3{font-size:1.2rem;color:var(--yellow);margin-bottom:.5rem}
+.site-footer p,.site-footer li{color:var(--muted);font-size:.95rem}
+.site-footer ul{list-style:none;padding:0}
+.site-footer a:hover{color:var(--yellow)}
+.copy{margin-top:2.5rem;font-size:.8rem;color:#7d6e64}
+
+/* ===== 10. WHATSAPP FLUTUANTE ===== */
+.wa-float{position:fixed;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:60;
+  width:60px;height:60px;border-radius:50%;background:var(--wa);display:grid;place-items:center;
+  box-shadow:0 8px 24px rgba(0,0,0,.5)}
+.wa-float svg{width:32px;height:32px;fill:#fff}
+
+/* ===== 11. DESKTOP ===== */
+@media (min-width:700px){
+  .nav .hide-mobile{display:inline}
+  .menu-grid{grid-template-columns:repeat(2,1fr)}
+  .feat-grid,.reviews,.footer-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media (min-width:960px){
+  section{padding:5.5rem 0}
+  .hero-grid{grid-template-columns:1.1fr .9fr}
+  .menu-grid{grid-template-columns:repeat(4,1fr)}
+  .nav{gap:2rem;font-size:1rem}
+  .wa-float{display:none} /* no desktop o CTA do hero basta */
+}
 </style>
 </head>
+
 <body>
 
-<div class="top-bar">🚀 OFERTA DE HOJE: <span>FRETE GRÁTIS</span> PARA TODO O BRASIL + 50% OFF</div>
+<!-- Ilustração do hambúrguer (SVG reutilizável, sem imagens externas = carrega rápido).
+     Troque por <img src="foto.webp" loading="lazy"> quando tiver fotos reais. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="burger" viewBox="0 0 200 180">
+    <path d="M20 70c0-38 36-60 80-60s80 22 80 60z" fill="#d98a2b"/>
+    <g fill="#ffe9b0"><ellipse cx="70" cy="40" rx="6" ry="3"/><ellipse cx="105" cy="28" rx="6" ry="3"/><ellipse cx="138" cy="44" rx="6" ry="3"/></g>
+    <path d="M14 76q15-12 30 0t30 0 30 0 30 0 30 0 22 0v12H14z" fill="#7cc243"/>
+    <path d="M20 88h160l-20 22-20-12-20 12-20-12-20 12-20-12-20 12z" fill="#ffc21a"/>
+    <rect x="16" y="98" width="168" height="26" rx="13" fill="#5a2a18"/>
+    <path d="M24 130h152a8 8 0 0 1 0 14H24a8 8 0 0 1 0-14z" fill="#e1251b"/>
+    <path d="M24 146h152c0 20-20 28-76 28s-76-8-76-28z" fill="#d98a2b"/>
+  </symbol>
+</svg>
 
-<header>
-<div class="container nav-container">
-<a href="#" class="brand-logo">ULTRA<span>SPORT</span></a>
-<span style="font-size:.85rem;font-weight:600;color:var(--green)">🔒 Compra 100% Segura</span>
-</div>
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#topo" class="logo">Burguer<span>Master</span></a>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#cardapio">Cardápio</a>
+      <a href="#diferenciais" class="hide-mobile">Diferenciais</a>
+      <a href="#depoimentos" class="hide-mobile">Avaliações</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
 </header>
 
-<section class="product-section">
-<div class="container product-grid">
-<div class="product-gallery">
-<div class="product-image-box">👟 [Foto do Tênis UltraComfort]</div>
-<div class="gallery-thumbs"><div class="thumb active"></div><div class="thumb"></div><div class="thumb"></div></div>
-</div>
+<main id="topo">
 
-<div class="product-details">
-<div class="rating-box"><span class="stars">★★★★★</span><span>4.9 / 5.0 (184 avaliações)</span></div>
-<h1 class="product-title">Tênis UltraComfort Sport Pro</h1>
-<div class="price-box">
-<span class="old-price">R$ 299,90</span>
-<span class="current-price">R$ 149,90</span>
-<span class="badge-discount">50% OFF</span>
-</div>
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>O melhor hambúrguer artesanal <em>da cidade</em></h1>
+        <p><strong>Combo Master com 20% off</strong> de segunda a quinta. Pão brioche, carne na chapa e entrega em até 40 minutos.</p>
+        <a class="btn btn-primary" href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20fazer%20um%20pedido!" target="_blank" rel="noopener">Fazer Pedido no WhatsApp</a>
+      </div>
+      <svg class="hero-art" viewBox="0 0 200 180" role="img" aria-label="Hambúrguer artesanal com queijo e salada"><use href="#burger"/></svg>
+    </div>
+  </section>
 
-<div class="option-group">
-<span class="option-label">Selecione o Tamanho:</span>
-<div class="size-selector" id="sizes">
-<button class="size-btn">38</button>
-<button class="size-btn active">39</button>
-<button class="size-btn">40</button>
-<button class="size-btn">41</button>
-<button class="size-btn">42</button>
-</div>
-</div>
+  <!-- ===== CARDÁPIO ===== -->
+  <section id="cardapio">
+    <div class="container">
+      <h2>Nossos destaques</h2>
+      <p class="section-sub">Feitos na hora, com ingredientes frescos. Escolha o seu e peça direto pelo WhatsApp.</p>
 
-<a href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20comprar%20o%20Tênis%20UltraComfort%20Sport%20tam%2039!" class="cta-buy-btn wa-link" target="_blank" rel="noopener">🛒 Comprar Agora no WhatsApp</a>
+      <div class="menu-grid">
+        <!-- Item 1 -->
+        <article class="card">
+          <div class="card-img"><svg viewBox="0 0 200 180" role="img" aria-label="Master Classic"><use href="#burger"/></svg></div>
+          <div class="card-body">
+            <h3>Master Classic</h3>
+            <p class="ingredients">Blend 160g, queijo cheddar, alface, tomate e molho da casa no pão brioche.</p>
+            <div class="card-foot">
+              <span class="price">R$ 28,90</span>
+              <a class="btn btn-small" target="_blank" rel="noopener" href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20pedir%20o%20Master%20Classic!">Pedir via WhatsApp</a>
+            </div>
+          </div>
+        </article>
 
-<div class="guarantees-list">
-<div class="guarantee-item"><span>🚚</span>Frete Grátis</div>
-<div class="guarantee-item"><span>🛡️</span>7 Dias de Garantia</div>
-<div class="guarantee-item"><span>⚡</span>Envio em 24h</div>
-</div>
-</div>
-</div>
-</section>
+        <!-- Item 2 -->
+        <article class="card">
+          <div class="card-img"><svg viewBox="0 0 200 180" role="img" aria-label="Bacon Smash"><use href="#burger"/></svg></div>
+          <div class="card-body">
+            <h3>Bacon Smash</h3>
+            <p class="ingredients">Dois smashes de 90g, bacon crocante, cheddar duplo e cebola caramelizada.</p>
+            <div class="card-foot">
+              <span class="price">R$ 34,90</span>
+              <a class="btn btn-small" target="_blank" rel="noopener" href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20pedir%20o%20Bacon%20Smash!">Pedir via WhatsApp</a>
+            </div>
+          </div>
+        </article>
 
-<section class="benefits-section">
-<div class="container">
-<h2 class="section-title">Por que você vai amar o UltraComfort?</h2>
-<div class="benefits-grid">
-<div class="benefit-card"><div class="benefit-icon">☁️</div><h3>Tecnologia de Amortecimento</h3><p>Macia sola em EVA de alta densidade que absorve o impacto a cada passo ou corrida.</p></div>
-<div class="benefit-card"><div class="benefit-icon">💨</div><h3>Tecido Respirável (Mesh)</h3><p>Mantém seus pés secos, frescos e sem odores, mesmo durante treinos intensos.</p></div>
-<div class="benefit-card"><div class="benefit-icon">🪶</div><h3>Ultraleve (Apenas 210g)</h3><p>Concebido para oferecer a sensação de estar descalço com máxima proteção.</p></div>
-</div>
-</div>
-</section>
+        <!-- Item 3 -->
+        <article class="card">
+          <div class="card-img"><svg viewBox="0 0 200 180" role="img" aria-label="Fire Burger"><use href="#burger"/></svg></div>
+          <div class="card-body">
+            <h3>Fire Burger</h3>
+            <p class="ingredients">Blend 180g, queijo pepper jack, jalapeño, maionese defumada e crispy de cebola.</p>
+            <div class="card-foot">
+              <span class="price">R$ 36,90</span>
+              <a class="btn btn-small" target="_blank" rel="noopener" href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20pedir%20o%20Fire%20Burger!">Pedir via WhatsApp</a>
+            </div>
+          </div>
+        </article>
 
-<section class="specs-section">
-<div class="container">
-<h2 class="section-title">Especificações Técnicas</h2>
-<div style="overflow-x:auto;border-radius:var(--radius)">
-<table class="specs-table">
-<tr><td>Material Externo</td><td>Tecido Mesh Respirável</td></tr>
-<tr><td>Solado</td><td>Borracha Antiderrapante + EVA</td></tr>
-<tr><td>Palmilha</td><td>Conforto Anelado em Gel</td></tr>
-<tr><td>Indicação de Uso</td><td>Corridas, Academia, Caminhadas e Dia a Dia</td></tr>
-<tr><td>Peso Médio</td><td>210 gramas por pé</td></tr>
-</table>
-</div>
-</div>
-</section>
+        <!-- Item 4 -->
+        <article class="card">
+          <div class="card-img"><svg viewBox="0 0 200 180" role="img" aria-label="Duplo Master"><use href="#burger"/></svg></div>
+          <div class="card-body">
+            <h3>Duplo Master</h3>
+            <p class="ingredients">Dois blends de 160g, queijo prato, bacon, ovo, alface e molho especial.</p>
+            <div class="card-foot">
+              <span class="price">R$ 42,90</span>
+              <a class="btn btn-small" target="_blank" rel="noopener" href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20pedir%20o%20Duplo%20Master!">Pedir via WhatsApp</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
-<section class="reviews-section">
-<div class="container">
-<h2 class="section-title">O que dizem nossos compradores</h2>
-<div class="reviews-grid">
-<div class="review-card"><div class="review-header"><span class="reviewer-name">Lucas M.</span><span class="stars">★★★★★</span></div><p class="review-comment">"Tênis leve demais! Chegou em 4 dias no interior de SP. Corro com ele todos os dias e a sola amortece muito bem."</p></div>
-<div class="review-card"><div class="review-header"><span class="reviewer-name">Fernanda A.</span><span class="stars">★★★★★</span></div><p class="review-comment">"Comprei para usar no trabalho onde fico em pé o dia todo. Acabaram minhas dores nos calcanhares."</p></div>
-<div class="review-card"><div class="review-header"><span class="reviewer-name">Gabriel T.</span><span class="stars">★★★★★</span></div><p class="review-comment">"Ótimo custo-benefício. O atendimento pelo WhatsApp foi super rápido para me ajudar na escolha da numeração."</p></div>
-</div>
-</div>
-</section>
+  <!-- ===== DIFERENCIAIS ===== -->
+  <section id="diferenciais" class="features">
+    <div class="container">
+      <h2>Por que a gente é diferente</h2>
+      <p class="section-sub">Cada detalhe é pensado para o hambúrguer chegar quente e saboroso.</p>
+      <div class="feat-grid">
+        <div class="feat"><div class="feat-icon" aria-hidden="true">🛵</div>
+          <div><h3>Entrega rápida</h3><p>Moto própria e embalagem térmica. Chega em até 40 minutos.</p></div></div>
+        <div class="feat"><div class="feat-icon" aria-hidden="true">🥩</div>
+          <div><h3>Carne 100% blend</h3><p>Mistura de cortes bovinos selecionados, moída diariamente.</p></div></div>
+        <div class="feat"><div class="feat-icon" aria-hidden="true">🌶️</div>
+          <div><h3>Molhos caseiros</h3><p>Receitas próprias, preparadas toda manhã na nossa cozinha.</p></div></div>
+      </div>
+    </div>
+  </section>
 
-<footer>
-<div class="container">
-<p>© 2026 UltraSport Store. Todos os direitos reservados.</p>
-<p style="margin-top:5px;opacity:.7">Termos de Uso | Políticas de Privacidade | Trocas e Devoluções</p>
-</div>
+  <!-- ===== DEPOIMENTOS ===== -->
+  <section id="depoimentos">
+    <div class="container">
+      <h2>Quem provou, voltou</h2>
+      <p class="section-sub">Avaliações de clientes reais (fictícios, por enquanto).</p>
+      <div class="reviews">
+        <figure class="review">
+          <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+          <blockquote>O Bacon Smash é o melhor que já comi. Carne no ponto e o molho é viciante.</blockquote>
+          <cite>Rafael M.</cite>
+        </figure>
+        <figure class="review">
+          <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+          <blockquote>Pedi numa sexta à noite e chegou quentinho em 30 minutos. Voltarei sempre.</blockquote>
+          <cite>Camila S.</cite>
+        </figure>
+        <figure class="review">
+          <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+          <blockquote>Pão macio, ingredientes frescos e preço justo. Virou nosso hambúrguer de domingo.</blockquote>
+          <cite>Bruno e família</cite>
+        </figure>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===== RODAPÉ ===== -->
+<footer id="contato" class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>Endereço</h3>
+        <p>Rua das Brasas, 123<br>Centro, Sua Cidade - UF</p>
+      </div>
+      <div>
+        <h3>Horário</h3>
+        <p>Ter a Qui: 18h às 23h<br>Sex a Dom: 18h à 00h30<br>Segunda: fechado</p>
+      </div>
+      <div>
+        <h3>Redes sociais</h3>
+        <ul>
+          <li><a href="#" rel="noopener">Instagram @burguermaster</a></li>
+          <li><a href="#" rel="noopener">Facebook</a></li>
+          <li><a href="#" rel="noopener">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">© 2026 Burguer Master. Todos os direitos reservados.</p>
+  </div>
 </footer>
 
-<div class="mobile-buy-bar">
-<a href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20comprar%20o%20Tênis%20UltraComfort!" class="cta-buy-btn wa-link" style="margin:0;padding:12px" target="_blank" rel="noopener">🛒 Pedir no WhatsApp — R$ 149,90</a>
-</div>
+<!-- ===== BOTÃO FLUTUANTE DO WHATSAPP (aparece no celular e tablet) ===== -->
+<a class="wa-float" href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20fazer%20um%20pedido!" target="_blank" rel="noopener" aria-label="Fazer pedido no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.1-1.3A10 10 0 1 0 12 2zm5.2 14.1c-.2.6-1.300 1.200-1.800 1.200-.5.100-1 .2-3.200-.7-2.700-1.100-4.400-3.800-4.500-4-.1-.2-1.100-1.400-1.100-2.700s.7-1.900.9-2.200c.2-.2.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.8 2c.1.200.1.400 0 .5l-.4.600-.4.400c-.1.200-.3.300-.1.600.2.300.8 1.300 1.700 2.100 1.100 1 2.100 1.300 2.400 1.400.3.100.5.100.6-.1l.9-1.100c.2-.2.400-.2.600-.1l1.900.9c.3.100.5.200.5.300.1.200.1.800-.1 1.400z"/></svg>
+</a>
 
-<script>
-(function(){
-  var btns=document.querySelectorAll('#sizes .size-btn');
-  var links=document.querySelectorAll('.wa-link');
-  function update(size){
-    var msg=encodeURIComponent('Olá, gostaria de comprar o Tênis UltraComfort Sport tam '+size+'!');
-    links.forEach(function(a){a.href='https://wa.me/5500000000000?text='+msg;});
-  }
-  btns.forEach(function(b){
-    b.addEventListener('click',function(){
-      btns.forEach(function(x){x.classList.remove('active');});
-      b.classList.add('active');
-      update(b.textContent.trim());
-    });
-  });
-  var thumbs=document.querySelectorAll('.thumb');
-  thumbs.forEach(function(t){
-    t.addEventListener('click',function(){
-      thumbs.forEach(function(x){x.classList.remove('active');});
-      t.classList.add('active');
-    });
-  });
-})();
-</script>
 </body>
 </html>
