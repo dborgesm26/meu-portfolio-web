@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tênis UltraComfort Sport — Performance e Estilo</title>
+<meta name="description" content="O tênis ideal para corridas e uso diário. Frete Grátis e Garantia de 7 dias. Peça agora!">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--primary:#2563eb;--dark:#0f172a;--light-bg:#f8fafc;--text-main:#1e293b;--text-muted:#64748b;--green:#16a34a;--wa:#22c55e;--wa-hover:#16a34a;--border:#e2e8f0;--radius:12px;--shadow:0 10px 25px -5px rgba(0,0,0,.08);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',system-ui,-apple-system,'Segoe UI',Arial,sans-serif}
+body{background:#fff;color:var(--text-main);line-height:1.5;padding-bottom:calc(70px + env(safe-area-inset-bottom,0px))}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+.top-bar{background:var(--dark);color:#fff;text-align:center;padding:10px 15px;font-size:.85rem;font-weight:600;letter-spacing:.5px}
+.top-bar span{color:#facc15}
+header{border-bottom:1px solid var(--border);padding:15px 0;position:sticky;top:env(safe-area-inset-top,0px);background:rgba(255,255,255,.95);backdrop-filter:blur(8px);z-index:100}
+.nav-container{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.brand-logo{font-size:1.3rem;font-weight:800;color:var(--dark);text-decoration:none;letter-spacing:-.5px}
+.brand-logo span{color:var(--primary)}
+.product-section{padding:40px 0}
+.product-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.product-gallery{background:var(--light-bg);border-radius:var(--radius);padding:40px;text-align:center;border:1px solid var(--border)}
+.product-image-box{width:100%;height:350px;background:linear-gradient(135deg,#e2e8f0,#cbd5e1);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;color:var(--text-muted);font-size:1.2rem;font-weight:600;box-shadow:var(--shadow);margin-bottom:20px}
+.gallery-thumbs{display:flex;gap:12px;justify-content:center}
+.thumb{width:60px;height:60px;background:#cbd5e1;border-radius:8px;cursor:pointer;border:2px solid transparent}
+.thumb.active{border-color:var(--primary)}
+.product-details{display:flex;flex-direction:column;gap:16px}
+.rating-box{display:flex;align-items:center;gap:8px;font-size:.9rem;color:var(--text-muted)}
+.stars{color:#f59e0b}
+.product-title{font-size:2.2rem;font-weight:800;color:var(--dark);line-height:1.2}
+.price-box{display:flex;align-items:baseline;gap:12px;margin:8px 0;flex-wrap:wrap}
+.old-price{font-size:1.1rem;color:var(--text-muted);text-decoration:line-through}
+.current-price{font-size:2.2rem;font-weight:800;color:var(--green)}
+.badge-discount{background:#dcfce7;color:#15803d;padding:4px 10px;border-radius:50px;font-size:.8rem;font-weight:700}
+.option-group{display:flex;flex-direction:column;gap:8px}
+.option-label{font-size:.9rem;font-weight:600;color:var(--dark)}
+.size-selector{display:flex;gap:10px;flex-wrap:wrap}
+.size-btn{border:1px solid var(--border);background:#fff;color:var(--text-main);padding:10px 16px;border-radius:8px;font-weight:600;cursor:pointer;transition:all .2s}
+.size-btn:hover,.size-btn.active{border-color:var(--primary);color:var(--primary);background:#eff6ff}
+.cta-buy-btn{background:var(--wa);color:#fff;border:none;padding:18px 24px;border-radius:var(--radius);font-size:1.1rem;font-weight:800;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;box-shadow:0 4px 15px rgba(34,197,94,.4);transition:transform .2s,background-color .2s;margin-top:10px}
+.cta-buy-btn:hover{background:var(--wa-hover);transform:translateY(-2px)}
+.guarantees-list{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding-top:15px;border-top:1px solid var(--border);margin-top:10px;text-align:center}
+.guarantee-item{font-size:.75rem;color:var(--text-muted);font-weight:500}
+.guarantee-item span{font-size:1.2rem;display:block;margin-bottom:4px}
+.benefits-section{background:var(--light-bg);padding:60px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.section-title{text-align:center;font-size:1.8rem;font-weight:800;color:var(--dark);margin-bottom:40px}
+.benefits-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:30px}
+.benefit-card{background:#fff;padding:30px;border-radius:var(--radius);border:1px solid var(--border);text-align:center}
+.benefit-icon{font-size:2.5rem;margin-bottom:16px}
+.benefit-card h3{font-size:1.2rem;color:var(--dark);margin-bottom:10px}
+.benefit-card p{color:var(--text-muted);font-size:.95rem}
+.specs-section{padding:60px 0}
+.specs-table{width:100%;max-width:700px;margin:0 auto;border-collapse:collapse;background:#fff;border:1px solid var(--border)}
+.specs-table tr{border-bottom:1px solid var(--border)}
+.specs-table tr:last-child{border-bottom:none}
+.specs-table td{padding:16px 20px;font-size:.95rem}
+.specs-table td:first-child{font-weight:600;color:var(--dark);width:40%;background:var(--light-bg)}
+.reviews-section{background:var(--light-bg);padding:60px 0;border-top:1px solid var(--border)}
+.reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:20px}
+.review-card{background:#fff;padding:20px;border-radius:var(--radius);border:1px solid var(--border)}
+.review-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.reviewer-name{font-weight:700;color:var(--dark);font-size:.95rem}
+.review-comment{font-size:.9rem;color:var(--text-main)}
+footer{background:var(--dark);color:#94a3b8;padding:30px 0;text-align:center;font-size:.85rem}
+.mobile-buy-bar{position:fixed;bottom:0;left:0;width:100%;background:#fff;padding:12px 20px calc(12px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--border);display:none;box-shadow:0 -4px 15px rgba(0,0,0,.05);z-index:1000}
+@media(max-width:768px){.product-grid{grid-template-columns:1fr}.product-title{font-size:1.8rem}.mobile-buy-bar{display:block}.product-gallery{padding:24px}}
+</style>
+</head>
+<body>
+
+<div class="top-bar">🚀 OFERTA DE HOJE: <span>FRETE GRÁTIS</span> PARA TODO O BRASIL + 50% OFF</div>
+
+<header>
+<div class="container nav-container">
+<a href="#" class="brand-logo">ULTRA<span>SPORT</span></a>
+<span style="font-size:.85rem;font-weight:600;color:var(--green)">🔒 Compra 100% Segura</span>
+</div>
+</header>
+
+<section class="product-section">
+<div class="container product-grid">
+<div class="product-gallery">
+<div class="product-image-box">👟 [Foto do Tênis UltraComfort]</div>
+<div class="gallery-thumbs"><div class="thumb active"></div><div class="thumb"></div><div class="thumb"></div></div>
+</div>
+
+<div class="product-details">
+<div class="rating-box"><span class="stars">★★★★★</span><span>4.9 / 5.0 (184 avaliações)</span></div>
+<h1 class="product-title">Tênis UltraComfort Sport Pro</h1>
+<div class="price-box">
+<span class="old-price">R$ 299,90</span>
+<span class="current-price">R$ 149,90</span>
+<span class="badge-discount">50% OFF</span>
+</div>
+
+<div class="option-group">
+<span class="option-label">Selecione o Tamanho:</span>
+<div class="size-selector" id="sizes">
+<button class="size-btn">38</button>
+<button class="size-btn active">39</button>
+<button class="size-btn">40</button>
+<button class="size-btn">41</button>
+<button class="size-btn">42</button>
+</div>
+</div>
+
+<a href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20comprar%20o%20Tênis%20UltraComfort%20Sport%20tam%2039!" class="cta-buy-btn wa-link" target="_blank" rel="noopener">🛒 Comprar Agora no WhatsApp</a>
+
+<div class="guarantees-list">
+<div class="guarantee-item"><span>🚚</span>Frete Grátis</div>
+<div class="guarantee-item"><span>🛡️</span>7 Dias de Garantia</div>
+<div class="guarantee-item"><span>⚡</span>Envio em 24h</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="benefits-section">
+<div class="container">
+<h2 class="section-title">Por que você vai amar o UltraComfort?</h2>
+<div class="benefits-grid">
+<div class="benefit-card"><div class="benefit-icon">☁️</div><h3>Tecnologia de Amortecimento</h3><p>Macia sola em EVA de alta densidade que absorve o impacto a cada passo ou corrida.</p></div>
+<div class="benefit-card"><div class="benefit-icon">💨</div><h3>Tecido Respirável (Mesh)</h3><p>Mantém seus pés secos, frescos e sem odores, mesmo durante treinos intensos.</p></div>
+<div class="benefit-card"><div class="benefit-icon">🪶</div><h3>Ultraleve (Apenas 210g)</h3><p>Concebido para oferecer a sensação de estar descalço com máxima proteção.</p></div>
+</div>
+</div>
+</section>
+
+<section class="specs-section">
+<div class="container">
+<h2 class="section-title">Especificações Técnicas</h2>
+<div style="overflow-x:auto;border-radius:var(--radius)">
+<table class="specs-table">
+<tr><td>Material Externo</td><td>Tecido Mesh Respirável</td></tr>
+<tr><td>Solado</td><td>Borracha Antiderrapante + EVA</td></tr>
+<tr><td>Palmilha</td><td>Conforto Anelado em Gel</td></tr>
+<tr><td>Indicação de Uso</td><td>Corridas, Academia, Caminhadas e Dia a Dia</td></tr>
+<tr><td>Peso Médio</td><td>210 gramas por pé</td></tr>
+</table>
+</div>
+</div>
+</section>
+
+<section class="reviews-section">
+<div class="container">
+<h2 class="section-title">O que dizem nossos compradores</h2>
+<div class="reviews-grid">
+<div class="review-card"><div class="review-header"><span class="reviewer-name">Lucas M.</span><span class="stars">★★★★★</span></div><p class="review-comment">"Tênis leve demais! Chegou em 4 dias no interior de SP. Corro com ele todos os dias e a sola amortece muito bem."</p></div>
+<div class="review-card"><div class="review-header"><span class="reviewer-name">Fernanda A.</span><span class="stars">★★★★★</span></div><p class="review-comment">"Comprei para usar no trabalho onde fico em pé o dia todo. Acabaram minhas dores nos calcanhares."</p></div>
+<div class="review-card"><div class="review-header"><span class="reviewer-name">Gabriel T.</span><span class="stars">★★★★★</span></div><p class="review-comment">"Ótimo custo-benefício. O atendimento pelo WhatsApp foi super rápido para me ajudar na escolha da numeração."</p></div>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<p>© 2026 UltraSport Store. Todos os direitos reservados.</p>
+<p style="margin-top:5px;opacity:.7">Termos de Uso | Políticas de Privacidade | Trocas e Devoluções</p>
+</div>
+</footer>
+
+<div class="mobile-buy-bar">
+<a href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20comprar%20o%20Tênis%20UltraComfort!" class="cta-buy-btn wa-link" style="margin:0;padding:12px" target="_blank" rel="noopener">🛒 Pedir no WhatsApp — R$ 149,90</a>
+</div>
+
+<script>
+(function(){
+  var btns=document.querySelectorAll('#sizes .size-btn');
+  var links=document.querySelectorAll('.wa-link');
+  function update(size){
+    var msg=encodeURIComponent('Olá, gostaria de comprar o Tênis UltraComfort Sport tam '+size+'!');
+    links.forEach(function(a){a.href='https://wa.me/5500000000000?text='+msg;});
+  }
+  btns.forEach(function(b){
+    b.addEventListener('click',function(){
+      btns.forEach(function(x){x.classList.remove('active');});
+      b.classList.add('active');
+      update(b.textContent.trim());
+    });
+  });
+  var thumbs=document.querySelectorAll('.thumb');
+  thumbs.forEach(function(t){
+    t.addEventListener('click',function(){
+      thumbs.forEach(function(x){x.classList.remove('active');});
+      t.classList.add('active');
+    });
+  });
+})();
+</script>
+</body>
+</html>
